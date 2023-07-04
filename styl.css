@@ -59,7 +59,7 @@ header button {
 
 .content-banner {
   display: flex;
-  justify-content: tart;
+  justify-content: start;
   align-items: center;
   gap: 63px;
 }
@@ -88,7 +88,6 @@ header button {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   margin-bottom: 96px;
 }
 .img_text {
@@ -107,7 +106,7 @@ header button {
 
 .content-cart_blok1 {
   position: absolute;
-  /* height: 260px; */
+  height: 100%;
 }
 .content-cart_blok4 {
   position: relative;
@@ -119,7 +118,7 @@ header button {
 
 .content-cart_blok4_4 {
   position: absolute;
-  /* height: 180px; */
+  height: 100%;
 }
 
 .cart_blok2 {
@@ -215,7 +214,13 @@ header button {
   .banner_text {
     width: 299px;
   }
+  .banner_text h1 {
+    font-size: 44px;
+  }
 
+  .banner_text h3 {
+    font-size: 24px;
+  }
   .content-banner {
     gap: 39px;
   }
@@ -237,14 +242,6 @@ header button {
     width: 734px;
   }
 
-  .banner_text h1 {
-    font-size: 44px;
-  }
-
-  .banner_text h3 {
-    font-size: 24px;
-  }
-
   .cart_blok2 h1 {
     margin-bottom: 3px;
   }
@@ -257,5 +254,66 @@ header button {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin-bottom: 32px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    width: 343px;
+  }
+  .hidden {
+    display: none;
+  }
+  .navigation {
+    gap: 0;
+  }
+
+  .left_blok {
+    padding: 18px 0;
+  }
+  .right_blok {
+    padding: 0 0;
+    width: 32px;
+  }
+  .content_wraper {
+    padding: 150px 56px;
+    margin-bottom: 65px;
+  }
+  .banner_text {
+    width: 264px;
+  }
+  .banner_text h1 {
+    font-size: 38px;
+  }
+
+  .banner_text h3 {
+    font-size: 20px;
+  }
+  .cart_blok1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 109px;
+  }
+  .content-cart_blok {
+    width: 343px;
+  }
+  .content-cart_blok img {
+    width: 343px;
+  }
+
+  .content-cart_blok4 {
+    width: 343px;
+    overflow: hidden;
+  }
+  .cart_blok2 h1 {
+    margin-bottom: 3px;
+  }
+
+  .carts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 }
